@@ -1,0 +1,20 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="datepicker-pt-BR.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script>
+	$( function() {
+	  $( "#datepicker" ).datepicker( $.datepicker.regional[ "pt-BR" ] );
+	  $( "#data_inicial" ).datepicker({dateFormat: 'dd/mm/yy' });
+	});
+  </script>
+</head>
+<body>
+<div id="maincontroller">
+	<h1>Informe a Data</h1>
+	<input type="text" placeholder="Data Inicial" id="data_inicial" ng-model="data_inicial">
+</div>
+</body>
+</html>
